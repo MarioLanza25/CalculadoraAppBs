@@ -1,6 +1,6 @@
 ﻿namespace LanguageBasic
 {
-    partial class Form1
+    partial class Calculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -57,7 +57,7 @@
             this.lblShowNumber = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblShowResult = new System.Windows.Forms.Label();
+            this.lblShowOperation = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -377,7 +377,7 @@
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.Controls.Add(this.label1);
-            this.flowLayoutPanel3.Controls.Add(this.lblShowResult);
+            this.flowLayoutPanel3.Controls.Add(this.lblShowOperation);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(4, 2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -395,16 +395,16 @@
             this.label1.TabIndex = 1;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblShowResult
+            // lblShowOperation
             // 
-            this.lblShowResult.AutoSize = true;
-            this.lblShowResult.Location = new System.Drawing.Point(309, 0);
-            this.lblShowResult.Name = "lblShowResult";
-            this.lblShowResult.Size = new System.Drawing.Size(0, 13);
-            this.lblShowResult.TabIndex = 2;
-            this.lblShowResult.Click += new System.EventHandler(this.Label1_Click);
+            this.lblShowOperation.AutoSize = true;
+            this.lblShowOperation.Location = new System.Drawing.Point(309, 0);
+            this.lblShowOperation.Name = "lblShowOperation";
+            this.lblShowOperation.Size = new System.Drawing.Size(0, 13);
+            this.lblShowOperation.TabIndex = 2;
+            this.lblShowOperation.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // Form1
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -412,7 +412,7 @@
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "Form1";
+            this.Name = "Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -455,7 +455,7 @@
         private System.Windows.Forms.Label lblShowNumber;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblShowResult;
+        private System.Windows.Forms.Label lblShowOperation;
     }
 }
 

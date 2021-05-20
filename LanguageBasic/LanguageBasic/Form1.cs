@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace LanguageBasic
 {
-    public partial class Form1 : Form
+    public partial class Calculadora : Form
     {
         private bool isOperationAdded;
         private String operation;
         private double result = 0;
 
-        public Form1()
+        public Calculadora()
         {
             InitializeComponent();
         }
@@ -28,11 +28,12 @@ namespace LanguageBasic
 
         private void BtnOne_Click(object sender, EventArgs e)
         {
-            if (lblShowNumber.Equals("0") || isOperationAdded )
+            if (lblShowNumber.Text.Equals("0") || isOperationAdded )
             {
-                lblShowNumber.Text =  " ";
+                lblShowNumber.Text =  "";
                 
             }
+            isOperationAdded = false;
             Button btn = (Button)sender;//Objeto que castea a button
             if(btn.Text.Equals(".", StringComparison.CurrentCultureIgnoreCase))
             {
@@ -49,41 +50,45 @@ namespace LanguageBasic
             Button btn = (Button)sender;
             if (result==0)
             {
-                
-                lblShowResult.Text = lblShowNumber.Text + " " + btn.Text;
+                result = Double.Parse(lblShowNumber.Text);
+                lblShowOperation.Text = lblShowNumber.Text + " " + btn.Text;
                 operation = btn.Text;
+                isOperationAdded = true;
             }
             else
             {
-                lblShowResult.Text += lblShowNumber.Text + " " + btn.Text;
+                operation = btn.Text;
                 isOperationAdded = true;
+                PerformOperation(operation);
+                lblShowOperation.Text= lblShowNumber.Text + " " + btn.Text;
+                
             }     
         }
 
         private void PerformOperation(String operation)
         {
-            double result = Double.Parse(lblShowNumber.Text);
+       
             switch (operation)
             {
                 case "+":
-                    result = result + Double.Parse(lblShowNumber.Text);
+                    result+= Double.Parse(lblShowNumber.Text);
                     break;
                 case "-":
-                    result = result + Double.Parse(lblShowNumber.Text);
+                    result-=  Double.Parse(lblShowNumber.Text);
                     break;
                 case "*":
-                    result = result + Double.Parse(lblShowNumber.Text);
+                    result*= Double.Parse(lblShowNumber.Text);
                     break;
                 case "/":
                    
                     double temp = Double.Parse(lblShowNumber.Text);
                     if( result == 0 && temp == 0)
                     {
-                        lblShowResult.Text = "Undified";
+                        lblShowNumber.Text= "Undefined";
                     }
                     else if (temp==0)
                     {
-                        lblShowResult.Text = "ERROR";
+                        lblShowNumber.Text = "Error";
 
                     }
                     else
@@ -96,8 +101,8 @@ namespace LanguageBasic
                     break;
 
             }
-            lblShowResult.Text = result.ToString();
-            operation = " ";
+            lblShowNumber.Text = result.ToString();
+            operation = "";
         }
     }
 }
