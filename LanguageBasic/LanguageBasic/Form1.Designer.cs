@@ -118,6 +118,7 @@
             this.btnCE.TabIndex = 1;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.BtnCE_Click);
             // 
             // btnClear
             // 
@@ -128,6 +129,7 @@
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnDelete
             // 
@@ -168,6 +170,7 @@
             this.btnSqrt.TabIndex = 6;
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = true;
+            this.btnSqrt.Click += new System.EventHandler(this.BtnSqrt_Click);
             // 
             // btnDivide
             // 
@@ -353,6 +356,7 @@
             this.btnEqual.TabIndex = 23;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.BtnEqual_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -408,13 +412,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(325, 429);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();

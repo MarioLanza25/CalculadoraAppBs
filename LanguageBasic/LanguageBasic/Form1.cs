@@ -48,24 +48,24 @@ namespace LanguageBasic
         private void BtnSum_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            if (result==0)
+            if (result==0  || isOperationAdded)
             {
                 result = Double.Parse(lblShowNumber.Text);
-                lblShowOperation.Text = lblShowNumber.Text + " " + btn.Text;
-                operation = btn.Text;
-                isOperationAdded = true;
+                //lblShowOperation.Text = lblShowNumber.Text + " " + btn.Text;
+                //isOperationAdded = true;
             }
             else
             {
-                operation = btn.Text;
-                isOperationAdded = true;
-                PerformOperation(operation);
-                lblShowOperation.Text= lblShowNumber.Text + " " + btn.Text;
+                PerformOperation();
+                //lblShowOperation.Text= lblShowNumber.Text + " " + btn.Text;
                 
-            }     
+            }
+            operation = btn.Text;
+            isOperationAdded = true;
+            lblShowOperation.Text = lblShowNumber.Text + " " +  operation;
         }
 
-        private void PerformOperation(String operation)
+        private void PerformOperation()
         {
        
             switch (operation)
@@ -102,7 +102,34 @@ namespace LanguageBasic
 
             }
             lblShowNumber.Text = result.ToString();
-            operation = "";
+            lblShowOperation.Text = "";
+        }
+
+        private void BtnEqual_Click(object sender, EventArgs e)
+        {
+            PerformOperation();
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            lblShowOperation.Text = "";
+            result = 0;
+            lblShowNumber.Text = "0";
+        }
+
+        private void BtnCE_Click(object sender, EventArgs e)
+        {
+            lblShowNumber.Text = "";
+        }
+
+        private void BtnSqrt_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            double number = Double.Parse(lblShowNumber.Text);
+            result = Math.Sqrt(number);
+
+            lblShowNumber.Text = result.ToString();
+            lblShowOperation.Text = "√(" + number + ")";
         }
     }
 }

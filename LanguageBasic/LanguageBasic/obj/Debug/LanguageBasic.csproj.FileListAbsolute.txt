@@ -28,3 +28,13 @@ C:\Users\Dell\Desktop\ProyectoCalc\CalculadoraAppBs\LanguageBasic\LanguageBasic\
 C:\Users\Dell\Desktop\ProyectoCalc\CalculadoraAppBs\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.exe
 C:\Users\Dell\Desktop\ProyectoCalc\CalculadoraAppBs\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.pdb
 C:\Users\Dell\Desktop\ProyectoCalc\CalculadoraAppBs\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.Calculadora.resources
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\bin\Debug\LanguageBasic.exe.config
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\bin\Debug\LanguageBasic.exe
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\bin\Debug\LanguageBasic.pdb
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.csprojAssemblyReference.cache
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.Calculadora.resources
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.Properties.Resources.resources
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.csproj.GenerateResource.cache
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.csproj.CoreCompileInputs.cache
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.exe
+C:\Users\JADPA26\Desktop\ProyectoCl\LanguageBasic\LanguageBasic\obj\Debug\LanguageBasic.pdb
